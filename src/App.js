@@ -1,12 +1,18 @@
 import './App.css';
-import { getAllCategories } from './Util/api';
+import { AddExpenseForm } from './Component/AddExpenseForm';
+import { Homepage } from './Component/Homepage';
 
 function App() {
 
-  getAllCategories();
   return (
     <div className="App">
-     <p> Happy APP </p>
+      <header> Expenses Tracking App</header>
+    <br/>
+    <br/>
+     <Homepage/>
+     <p1>
+     <AddExpenseForm/>
+     </p1>
     </div>
   );
 }

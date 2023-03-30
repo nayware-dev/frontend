@@ -7,7 +7,21 @@ const myApi = axios.create({
 
 export const getAllCategories = ()=>{
     return myApi.get("category").then((res)=>{
-        console.log(res);
+        return res.data;
+    })
+}
+
+export const getAllCustomerExpenses = ()=>{
+    return myApi.get("customer/1/expenses").then((res)=>{
+        return res.data;
+    })
+} 
+
+export const addNewExpense = (expenseObj)=>{
+    const {amount, note, status} = expenseObj
+
+    return myApi.post("customer/1/expenses", {amount, note, status}).then((res)=>{
+        console.log(res)
         return res;
     })
 }
