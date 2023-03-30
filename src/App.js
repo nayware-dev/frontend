@@ -10,9 +10,9 @@ function App() {
     <br/>
     <br/>
      <Homepage/>
-     <p1>
+     <div id="p1">
      <AddExpenseForm/>
-     </p1>
+     </div>
     </div>
   );
 }

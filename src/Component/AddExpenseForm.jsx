@@ -21,12 +21,14 @@ status : event.target[2].value
     }
     //Getting an error because of string value not boolean
     formData.status === "true" ? formData.status = true : formData.status = false;
-
     handleSubmit(formData)
 }}>
 <br/>
 <label for="amount">Amount:</label>
-<input type="number" id="Amount" name="amount" placeholder="0.00"/>
+<input type="number" id="amount" name="amount" placeholder="0.00"/><br/>
+<label for="note">Note:</label><br/>
+<textarea id="note" rows="5" cols="70" ></textarea>
+
 <label for="status">Paid/Unpaid?</label>
 
 {/* <input type="text" id="status" name="status" value="status"/> */}
@@ -34,9 +36,6 @@ status : event.target[2].value
    <option value="true">Paid</option>
    <option value="false">Unpaid</option>
  </select>
-<br/><br/>
-<label for="note">Note:</label><br/>
-<textarea id="note" rows="5" cols="70" ></textarea>
 <br/><br/><br/>
 <input type="submit" value="Submit"></input>
 </form>

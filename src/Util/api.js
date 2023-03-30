@@ -20,6 +20,7 @@ export const getAllCustomerExpenses = ()=>{
 export const addNewExpense = (expenseObj)=>{
     const {amount, note, status} = expenseObj
 
+console.log(expenseObj)
     return myApi.post("customer/1/expenses", {amount, note, status}).then((res)=>{
         console.log(res)
         return res;

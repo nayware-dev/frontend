@@ -7,7 +7,6 @@ export const Homepage = () => {
 
     useEffect(()=>{
     getAllCategories().then((categoriesFromServer)=>{
-        console.log(categoriesFromServer)
         return setCategories(categoriesFromServer)
     })       
     },[])
