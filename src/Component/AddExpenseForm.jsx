@@ -28,7 +28,6 @@ status : event.target[2].value
 <input type="number" id="amount" name="amount" placeholder="0.00"/><br/>
 <label for="note">Note:</label><br/>
 <textarea id="note" rows="5" cols="70" ></textarea>
-
 <label for="status">Paid/Unpaid?</label>
 
 {/* <input type="text" id="status" name="status" value="status"/> */}
